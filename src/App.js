@@ -229,7 +229,7 @@ function App() {
                 <h4>{data.feelLike}°C</h4>
               </SmallWrapper>
               <SmallWrapper>
-                <img src={data.imgUrl} />
+                <img src={data.imgUrl} alt='icon' />
                 <p>{data.condition}</p>
               </SmallWrapper>
             </Wrapper2>
