@@ -165,7 +165,7 @@ function App() {
     setLoading(true);
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=6267b2b996324a5393e115509211209&q=auto:ip`
+        `https://api.weatherapi.com/v1/current.json?key=6267b2b996324a5393e115509211209&q=auto:ip`
       )
       .then((response) => {
         parseResponse(response);
@@ -199,7 +199,7 @@ function App() {
               onClick={(e) => {
                 axios
                   .get(
-                    `http://api.weatherapi.com/v1/current.json?key=6267b2b996324a5393e115509211209&q=${search}`
+                    `https://api.weatherapi.com/v1/current.json?key=6267b2b996324a5393e115509211209&q=${search}`
                   )
                   .then((response) => {
                     parseResponse(response);
